@@ -24,6 +24,10 @@ class ParamsController < ApplicationController
   def url_segment
     @student_1 = params[:student_1]
     @student_2 = params[:student_2]
+  end
 
+  def counter
+    old_number = params[:number].to_i
+    @number = old_number + 1
   end
 end

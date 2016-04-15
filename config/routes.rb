@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
   get 'name', to: 'params#name'
-  get 'number_game', to: 'params#number_game'
+  get 'number_game/:number', to: 'params#number_game'
+  get 'counter/:number', to: 'params#counter'
 
   get 'url_segment/:student_1/:student_2', to: 'params#url_segment'
 
