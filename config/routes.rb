@@ -3,6 +3,14 @@ Rails.application.routes.draw do
   get 'name', to: 'params#name'
   get 'number_game/:number', to: 'params#number_game'
   get 'counter/:number', to: 'params#counter'
+  get '/form_display', to: 'params#form_display'
+  post '/form_result', to: 'params#form_result'
+
+
+
+
+
+
 
   get 'url_segment/:student_1/:student_2', to: 'params#url_segment'
 
